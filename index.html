@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.1-web/css/all.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="search--btn">
+                <input type="text" name="" id="search--infor" placeholder="Search...">
+                <a onclick="showSearch()"><i class="fas fa-search"></i></a>
+            </div>
+            <div id="nav--btn" onclick="showNavigation()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul id="nav">
+                <li onclick="delOpacityAndNav()"><a href="#">HOME</a></li>
+                <li onclick="delOpacityAndNav()"><a href="#band">BAND</a></li>
+                <li onclick="delOpacityAndNav()"><a href="#tour">TOUR</a></li>
+                <li onclick="delOpacityAndNav()"><a href="#contact">CONTACT</a></li>
+                <li>
+                    <a onclick="showSubNav()">MORE<i class="fas fa-caret-down"></i></i></a>
+                    <ul class="subnav">
+                        <li onclick="delOpacityAndNav()"><a href="oursong.html">OUR SONGS</a></li>
+                        <li onclick="delOpacityAndNav()"><a href="https://mp3.zing.vn/" target="_blank">ZING MP3</a></li>
+                        <li onclick="delOpacityAndNav()"><a href="#">OTHER</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="slideshow">
+            <div class="slideshow--text" id="chicago">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago - We won't forget</p>
+            </div>
+            <div class="slideshow--text " id="losangeles">
+                <h3>Los Angeles</h3>
+                <p>We had the best time playing at Venice Beach!</p>
+            </div>
+            <div class="slideshow--text" id="newyork">
+                <h3>New York</h3>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+
+        <div id="band" class="section--content">
+            <h2 class="content--heading">The Band</h2>
+            <p class="content--sub--heading">We love music</p>
+            <p class="band--desc">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="band--member--list">
+                <div class="member">
+                    <p class="member--name">Name</p>
+                    <img src="./assets/img/bandmember.jpg" alt="Member Image">
+                </div>
+                <div class="member">
+                    <p class="member--name">Name</p>
+                    <img src="./assets/img/bandmember.jpg" alt="Member Image">
+                </div>
+                <div class="member">
+                    <p class="member--name">Name</p>
+                    <img src="./assets/img/bandmember.jpg" alt="Member Image">
+                </div>
+
+            </div>
+
+        </div>
+        <div id="hot-album" class="section--content">
+
+        </div>
+        <div id="tour--section">
+            <div id="tour" class="section--content">
+                <h2 class="content--heading">TOUR DATES</h2>
+                <p class="content--sub--heading">Remember to book your tickets!</p>
+                <ul id="tour--date--list">
+                    <li class="tour--date--soldout">Septemper <span>Sold out</span></li>
+                    <li class="tour--date--soldout">October <span>Sold out</span></li>
+                    <li class="tour--date--stocking">Novemver <span>3</span></li>
+                </ul>
+
+                <div id="tour--adress--list">
+                    <div class="tour--adress">
+                        <img src="./assets/img/newyork.jpg" alt="">
+                        <div class="tour--adress--text">
+                            <h3 class="tour--adress--name">New York</h3>
+                            <p class="tour--adress--time">Fri 27 Nov 2016</p>
+                            <p class="tour--adress--desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button onclick="popupFormTicket()" type="submit">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="tour--adress">
+                        <img src="./assets/img/paris.jpg" alt="">
+                        <div class="tour--adress--text">
+                            <h3 class="tour--adress--name">Paris</h3>
+                            <p class="tour--adress--time">Sat 28 Nov 20166</p>
+                            <p class="tour--adress--desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button onclick="popupFormTicket()" type="submit">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="tour--adress">
+                        <img src="./assets/img/sanfran.jpg" alt="">
+                        <div class="tour--adress--text">
+                            <h3 class="tour--adress--name">San Francisco</h3>
+                            <p class="tour--adress--time">Sun 29 Nov 2016</p>
+                            <p class="tour--adress--desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button onclick="popupFormTicket()" type="submit">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Opacity"></div>
+        <div id="buy--ticket">
+            <div class="title--form">
+                <i onclick="closeFormTickets()" class="fas fa-times button--close"></i>
+                <h2 class="name--form"><i class="fas fa-briefcase"></i>Tickets </h2>
+            </div>
+            <form id="buy--ticket--form" action="">
+                <label for="count--tickets"><i class="fas fa-shopping-cart"></i> Tickets, $15 per person</label>
+                <input type="text" value="" id="count--tickets" placeholder="How many?">
+                <label for="user--email"><i class="fas fa-user"></i> Send To</label>
+                <input type="email" href="mailto:" id="user--email" placeholder="Enter email">
+                <button id="pay--btn" type="button">Pay <i class="fas fa-check"></i></button>
+                <button onclick="closeFormTickets()" id="close--btn" type="button">Close <i class="fas fa-times"></i></button>
+                <span class="help--form">Need <a href="">help?</a></span>
+            </form>
+        </div>
+
+        <div id="contact" class="section--content">
+            <h2 class="content--heading">Contact</h2>
+            <p class="content--sub--heading">Fan? Drop a note!</p>
+            <div id="contact--content">
+                <ul id="contact--infor" class="col-half">
+                    <li><i class="fas fa-map-marker-alt"></i>Chicago, US</li>
+                    <li><i class="fas fa-phone"></i>Phone:<a href="tel:+00 151515"> +00 151515</a></li>
+                    <li><i class="fas fa-envelope"></i>Email:<a href="mailto:mail@mail.com"> mail@mail.com</a></li>
+                </ul>
+                <form action="" id="contact--form" class="col-half">
+                    <input class="contact--name " required type="text" placeholder="Name">
+                    <input class="contact--mail " required type="email" placeholder="Email">
+                    <input class="contact--message" required type="text" placeholder="Message">
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+        <div class="map">
+        </div>
+        <div id="footer" class="section--content">
+            <ul id="contact--icons">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-snapchat"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p>Powered by <a href="#">w3.css</a></p>
+        </div>
+        <div id="boxchat__icon" onclick="showMessage()">
+            <i class="far fa-comment-dots"></i>
+        </div>
+        <div id="boxchat">
+            <div id="chat__tab">
+                <i class="far fa-comments"></i>
+                <div class="chat__close" onclick="closeMess()">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div id="boxchat__content">
+                <div id="chat__frame">
+                    <div class="chat">
+                        <img src="./assets/img/help__team.png" alt="">
+                        <p class="text__chat">Hello! Can I help you, please?</p>
+                    </div>
+                    <div class="option">
+                        <p>Buy Tickets</p>
+                        <p>Contact for work </p>
+                        <p>Other</p>
+                    </div>
+                    <div class="inbox">
+
+                    </div>
+                </div>
+                <div class="mes">
+                    <input type="text" placeholder="Message...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/action.js"></script>
+</body>
+
+</html>
