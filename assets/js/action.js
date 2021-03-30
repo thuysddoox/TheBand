@@ -1,7 +1,7 @@
 var imgIndex = 0;
 var slide = document.getElementsByClassName("slideshow")[0];
 var text = [document.getElementById("chicago"), document.getElementById("losangeles"), document.getElementById("newyork")];
-var img = ["url('./assets/img/chicago.jpg')", "url('./assets/img/la.jpg')", "url('/assets/img/ny.jpg')"];
+var img = ["url('./assets/img/chicago.jpg')", "url('./assets/img/la.jpg')", "url('./assets/img/ny.jpg')"];
 
 function slideshow() {
     slide.style.backgroundImage = img[imgIndex];
